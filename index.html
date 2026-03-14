@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Birthday Surprise 🎂</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:Arial;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4,#fbc2eb,#a6c1ee);
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:30px;
+background:#ff4b5c;
+color:white;
+cursor:pointer;
+}
+
+#message{
+display:none;
+font-size:40px;
+margin-top:30px;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🎁 Click the Surprise Button 🎁</h1>
+
+<button onclick="showMessage()">Click Me</button>
+
+<div id="message">🎉 Happy Birthday! 🎂</div>
+
+<script>
+function showMessage(){
+document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
